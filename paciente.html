@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+
+<head>
+
+
+<meta charset="UTF-8">
+
+
+<title>
+Portal del Paciente
+</title>
+
+
+<link rel="stylesheet" href="estilo.css">
+
+
+</head>
+
+
+
+<body>
+
+
+
+<header>
+
+
+<h1 class="titulo">
+
+Portal del Paciente
+
+</h1>
+
+
+
+<nav>
+
+<a href="index.html">Inicio</a>
+<a href="nosotros.html">Sobre Nosotros</a>
+<a href="servicios.html">Servicios</a>
+<a href="proceso.html">Proceso</a>
+<a href="blog.html">Blog</a>
+<a href="paciente.html">Portal Paciente</a>
+<a href="legal.html">Legal</a>
+<a href="contacto.html">Contacto</a>
+
+</nav>
+
+
+</header>
+
+
+
+
+
+
+
+<section class="contenedor paciente">
+
+
+
+<img src="imagenes/paciente.jpg">
+
+
+
+<h2>
+
+Atención y seguimiento digital del paciente
+
+</h2>
+
+
+
+<p>
+
+Espacio diseñado para facilitar la comunicación
+entre paciente y equipo médico mediante herramientas digitales.
+
+</p>
+
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>
+📅 Citas Programadas
+</h2>
+
+
+<p>
+
+Consulta de fechas y horarios de atención médica virtual.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>
+📄 Resultados Médicos
+</h2>
+
+
+<p>
+
+Visualización y envío seguro de estudios,
+documentos médicos y resultados.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>
+💊 Indicaciones Médicas
+</h2>
+
+
+<p>
+
+Acceso a recomendaciones,
+tratamientos indicados y cuidados posteriores.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>
+🩹 Seguimiento Postoperatorio
+</h2>
+
+
+<p>
+
+Registro de evolución después de una cirugía:
+
+<br><br>
+
+✓ Dolor (0-10)
+
+<br>
+
+✓ Fiebre
+
+<br>
+
+✓ Estado de la herida
+
+<br>
+
+✓ Síntomas posteriores
+
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<h2>
+
+Calculadora de Riesgo Quirúrgico
+
+</h2>
+
+
+
+
+
+<div class="card">
+
+
+<label>
+
+Edad:
+
+</label>
+
+<br>
+
+<input type="number" placeholder="Edad">
+
+
+<br><br>
+
+
+<label>
+
+Peso:
+
+</label>
+
+<br>
+
+<input type="number" placeholder="Peso">
+
+
+<br><br>
+
+
+<label>
+
+Talla:
+
+</label>
+
+<br>
+
+<input type="number" placeholder="Talla">
+
+
+<br><br>
+
+
+
+<label>
+
+¿Tiene hipertensión?
+
+</label>
+
+<br>
+
+<select>
+
+<option>
+Seleccione
+</option>
+
+
+<option>
+Sí
+</option>
+
+
+<option>
+No
+</option>
+
+
+</select>
+
+
+<br><br>
+
+
+
+<label>
+
+¿Tiene diabetes?
+
+</label>
+
+<br>
+
+<select>
+
+<option>
+Seleccione
+</option>
+
+
+<option>
+Sí
+</option>
+
+
+<option>
+No
+</option>
+
+
+</select>
+
+
+<br><br>
+
+
+
+
+<label>
+
+¿Fuma?
+
+</label>
+
+
+<br>
+
+
+<select>
+
+<option>
+Seleccione
+</option>
+
+
+<option>
+Sí
+</option>
+
+
+<option>
+No
+</option>
+
+
+</select>
+
+
+
+<br><br>
+
+
+<button>
+
+Calcular Riesgo
+
+</button>
+
+
+
+<p>
+
+Resultado:
+
+<br>
+
+Bajo riesgo
+
+<br>
+
+Riesgo moderado
+
+<br>
+
+Riesgo elevado
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<h2>
+
+🤖 Chatbot Médico Simulado
+
+</h2>
+
+
+
+
+
+<div class="card">
+
+
+<p>
+
+
+Preguntas frecuentes:
+
+
+<br><br>
+
+
+¿Qué es la anestesia?
+
+<br>
+
+¿Qué es una teleconsulta?
+
+<br>
+
+¿Cuánto dura el ayuno?
+
+<br>
+
+¿Qué hacer después de una cirugía?
+
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+</section>
+
+<script>
+
+function responder(){
+
+    let pregunta =
+    document.getElementById("pregunta")
+    .value
+    .toLowerCase();
+
+    let respuesta = "";
+
+    if(pregunta.includes("anestesia")){
+
+        respuesta =
+        "La anestesia es un procedimiento que evita el dolor durante una cirugía.";
+
+    }
+
+    else if(pregunta.includes("teleconsulta")){
+
+        respuesta =
+        "La teleconsulta es una consulta médica realizada mediante medios digitales.";
+
+    }
+
+    else if(pregunta.includes("ayuno")){
+
+        respuesta =
+        "El tiempo de ayuno depende del procedimiento y debe seguir las indicaciones médicas.";
+
+    }
+
+    else if(pregunta.includes("cirugia")){
+
+        respuesta =
+        "Antes de una cirugía es importante cumplir el ayuno y realizar los estudios solicitados.";
+
+    }
+
+    else{
+
+        respuesta =
+        "Lo siento, aún no tengo información sobre esa pregunta.";
+
+    }
+
+    document.getElementById("respuesta")
+    .innerHTML = respuesta;
+
+}
+
+</script>
+
+</body>
+
+
+</html>
+<h2>Chatbot Médico</h2>
+
+<div class="card">
+
+    <p>Escribe tu pregunta:</p>
+
+    <input type="text" id="pregunta">
+
+    <button onclick="responder()">
+        Enviar
+    </button>
+
+    <p id="respuesta"></p>
+
+</div>
